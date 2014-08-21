@@ -888,7 +888,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         for (l = keep; l < toPath.length; l++) {
           entering = toPath[l];
           entering.locals = toLocals[l];
-          if (entering.self.onEnter) {
+          if (entering.self.onEnter && entering.locals) {
             $injector.invoke(entering.self.onEnter, entering.self, entering.locals.globals);
           }
         }
