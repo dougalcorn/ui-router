@@ -1,3 +1,9 @@
+### 0.2.10.1 (2014-08-21)
+
+#### Bug Fixes
+
+* Don't try to invoke onExit more than once
+
 ### 0.2.10 (2014-03-12)
 
 
